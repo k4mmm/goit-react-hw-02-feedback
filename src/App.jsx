@@ -35,7 +35,7 @@ class Feedback extends Component {
       <FeedbackSection>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={{ good, neutral, bad }}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.increment}
           ></FeedbackOptions>
         </Section>
